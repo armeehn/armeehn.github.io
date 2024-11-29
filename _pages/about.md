@@ -2,24 +2,32 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: me.png
 
-news: true # includes a list of news items
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi!
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm a software developer at Softree Technical Systems where I work on a variety of modelling-based projects related to road design.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I received my MSc. in mathematics from UBC - Okanagan, working with Dr. Yves Lucet and Dr. Warren Hare.
+My research focused on using regularization for continuous optimization in road design applications.
+I am grateful to have been partially funded by the [FRQNT](https://frq.gouv.qc.ca/en/nature-and-technologies/) B1X scholarship.
+
+I completed my joint BSc. at McGill in mathematics and computer science.
+During my studies, I mainly worked in the [Oberman Lab](https://adamoberman.net/oberman-lab.html) with a handful of great researchers to whom I am indebted to.
+
+Some non-academic activities that I enjoy are cycling, skiing and badminton.
+
+### small talk topics
+- My surname is pronounced as [ja.nan.'two.no]
+- I enjoy tinkering, curated in [`/projects`]({{ site.url | append: site.baseurl | append: '/projects/' }})
+- Cooking, see [`/misc/culinary`]({{ site.url | append: site.baseurl | append: '/misc/culinary/' }})
+- Homelab-ing

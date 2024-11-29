@@ -1,115 +1,91 @@
 ---
 ---
+@string{abs = {Transportation maps between probability measures are critical
+objects in numerous areas of mathematics and applications such as PDE,
+fluid mechanics, geometry, machine learning, computer science, and economics.
+Given a pair of source and target measures, one searches for a map that has
+suitable properties and transports the source measure to the target one.
+Here, we study maps that possess the no-collision property; that is, particles
+simultaneously traveling from sources to targets in a unit time with uniform
+velocities do not collide. These maps are particularly relevant for
+applications in swarm control problems. We characterize these no-collision
+maps in terms of half-space preserving property and establish a direct
+connection between these maps and binary-space-partitioning (BSP) tree
+structures. Based on this characterization, we provide explicit BSP
+algorithms, of cost \(O(n \log n)\), to construct no-collision maps. Moreover,
+interpreting these maps as approximations of optimal transportation maps,
+we find that they succeed in computing nearly optimal maps for \(q\)-Wasserstein
+metric (\(q = 1, 2\)). In some cases, our maps yield costs that are just a few
+percent off from being optimal.}}
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{sensible-roads,
+  title    = {Optimization with regularization to create sensible vertical alignments in road design},
+  journal  = {Decision Analytics Journal},
+  volume   = {6},
+  pages    = {100183},
+  year     = {2023},
+  issn     = {2772-6622},
+  doi      = {10.1016/j.dajour.2023.100183},
+  url      = {https://www.sciencedirect.com/science/article/pii/S2772662223000231},
+  author   = {Alexander Iannantuono and Warren Hare and Yves Lucet},
+  keywords = {Road design, Vertical alignment optimization, Quasi-network flow, Regularization},
+  abstract = {We analyze the use of L1-norm and Total Variation regularization within a model of road design to obtain sensible vertical alignments. With a dataset of twenty-three roads, we present a heuristic for choosing regularization parameters, and obtain cost bounds to establish a suitable choice for its use on real data. Further, we show that regularization reduces waviness on several case studies of real roads, provided by our industrial partner. While results are reported for the Quasi-Network Flow model, the techniques are easily transferred to other road design models.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@misc{salvador2021frustratingly,
+    abbr={arXiv},
+    abstract={Distribution shift is an important concern in deep image classification, produced either by corruption of the source images, or a complete change, with the solution involving domain adaptation. While the primary goal is to improve accuracy under distribution shift, an important secondary goal is uncertainty estimation: evaluating the probability that the prediction of a model is correct. While improving accuracy is hard, uncertainty estimation turns out to be frustratingly easy. Prior works have appended uncertainty estimation into the model and training paradigm in various ways. Instead, we show that we can estimate uncertainty by simply exposing the original model to corrupted images, and performing simple statistical calibration on the image outputs. Our frustratingly easy methods demonstrate superior performance on a wide range of distribution shifts as well as on unsupervised domain adaptation tasks, measured through extensive experimentation.},
+    title={Frustratingly Easy Uncertainty Estimation for Distribution Shift}, 
+    author={Salvador, T. and Voleti, V. and Iannantuono, A. and Oberman, A. M.},
+    year={2021},
+    eprint={2106.03762},
+    pdf={https://arxiv.org/pdf/2106.03762},
+    archivePrefix={arXiv},
+    primaryClass={stat.ML},
+    html={https://arxiv.org/abs/2106.03762},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{no-collision,
+    abbr={JSC},
+	abstract = abs,
+	author = {Nurbekyan, L. and Iannantuono, A. and Oberman, A. M.},
+	da = {2020/02/10},
+	date-added = {2020-04-15 09:06:38 -0400},
+	date-modified = {2020-04-15 09:06:38 -0400},
+	doi = {10.1007/s10915-020-01143-x},
+	id = {Nurbekyan2020},
+	isbn = {1573-7691},
+	journal = {},
+	number = {2},
+	pages = {45},
+	title = {No-Collision Transportation Maps},
+    publisher={Springer Science and Business Media LLC},
+	ty = {JOUR},
+	url = {https://doi.org/10.1007/s10915-020-01143-x},
+    html = {https://doi.org/10.1007/s10915-020-01143-x},
+	volume = {82},
+	year = {2020},
+    selected={true},
+    pdf={https://arxiv.org/pdf/1912.02317},
+	bdsk-Url-1 = {https://doi.org/10.1007/s10915-020-01143-x}}
+
+@misc{oberman2020calibrated,
+      title={Calibrated Top-1 Uncertainty estimates for classification by score based models},
+      author={Oberman, A. M. and Finlay, C. and Iannantuono, A. and Salvador, T.},
+      abstract = {While the accuracy of modern deep learning models has significantly improved in recent years, the ability of these models to generate uncertainty estimates has not progressed to the same degree. Uncertainty methods are designed to provide an estimate of class probabilities when predicting class assignment.},
+      year={2020},
+      eprint={1903.09215},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      abbr={arXiv},
+      pdf={https://arxiv.org/pdf/1903.09215},
+      html={https://arxiv.org/abs/1903.09215},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@misc{aram-project,
+    title={A Langevin dynamics based approach to generating sparse adversarial perturbations},
+    author={Pooladian, A-A. and Iannantuono, A. and Finlay, C. and Oberman, A. M.},
+    abstract={Deep neural networks are vulnerable to small changes in the input that lead to misclassification, calledadversarial images. We present an efficient approach togenerating sparse adversarial images, i.e. small with respect to the cardinality function \(\ell_0\), without using gradient information. The lack of gradient oracle isof interest in the case of adversarial attacks: in a practical setting, one can easily query the model to determine whether the image is misclassified or not but rarely will the full network structure be provided. Our method, ProxWalk, is inspired by Metropolis-Adjusted Langevin dynamics; a method for modeling random walks,and the proximal variant. We present results on MNIST, Fashion-MNIST, CIFAR10, and CIFAR100 datasets, and demonstrate that our decision-based attackis on par with modern sparse white-box attacks.},
+    year={2019},
+    pdf={https://www.math.mcgill.ca/apooladian/LangevinDynamicsPreprint.pdf},
 }
