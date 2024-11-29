@@ -1,16 +1,16 @@
 ---
 layout: page
-title: submenus
+title: misc
 nav: true
 nav_order: 8
 dropdown: true
 children:
-  - title: publications
-    permalink: /publications/
+  - title: course work
+    permalink: /misc/course-work/
   - title: divider
-  - title: projects
-    permalink: /projects/
+  - title: culinary
+    permalink: misc/culinary/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: photography
+    permalink: misc/photography/
 ---
