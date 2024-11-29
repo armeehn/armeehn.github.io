@@ -28,6 +28,6 @@ Some non-academic activities that I enjoy are cycling, skiing and badminton.
 
 ### small talk topics
 - My surname is pronounced as [ja.nan.'two.no]
-- I enjoy tinkering, curated in [`/projects`]({{ site.url | append: site.baseurl | append: '/projects/' }})
+- I enjoy tinkering
 - Cooking, see [`/misc/culinary`]({{ site.url | append: site.baseurl | append: '/misc/culinary/' }})
 - Homelab-ing
