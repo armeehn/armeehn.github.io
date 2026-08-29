@@ -64,6 +64,8 @@ jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
+    # Gitea: GitHub Pages has no Gitea equivalent; this deploy stays on GitHub.
+    if: ${{ contains(github.server_url, 'github.com') }}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
