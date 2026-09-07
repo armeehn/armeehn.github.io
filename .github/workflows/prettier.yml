@@ -33,9 +33,18 @@ jobs:
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
       - name: Upload html diff ⬆️
+        if: ${{ (failure() && steps.prettier.conclusion == 'failure') && contains(github.server_url, 'github.com') }}
         id: artifact-upload
-        if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
         uses: actions/upload-artifact@v4
+        with:
+          name: HTML Diff
+          path: diff.html
+          retention-days: 7
+
+      - name: Upload html diff ⬆️ (Gitea)
+        if: ${{ (failure() && steps.prettier.conclusion == 'failure') && !contains(github.server_url, 'github.com') }}
+        id: artifact-upload-gitea
+        uses: christopherHX/gitea-upload-artifact@v4
         with:
           name: HTML Diff
           path: diff.html
